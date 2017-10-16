@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name  = "Data Driven Framework">
+    <listeners>
+        <listener class-name="Framework.listeners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="Framework.listeners.ExtentReporterNG"/>
+    </listeners>
+    <test name = "Bank Manager Login Test">
+
+    <classes>
+        <class name = "Framework.testcases.BankManagerLoginTest"/>
+        <class name="Framework.testcases.AddCustomerTest"/>
+    </classes>
+    </test>
+
+</suite>
